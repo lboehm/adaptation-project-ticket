@@ -1,0 +1,55 @@
+{
+  "fileName": "manifest",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "appdescr_variant",
+  "reference": "i2d.qm.inspresults.records1",
+  "id": "customer.ext.inspresults.records1",
+  "namespace": "apps/i2d.qm.inspresults.records1/appVariants/customer.ext.inspresults.records1/",
+  "content": [
+    {
+        "changeType": "appdescr_ui5_addNewModel",
+        "content": {
+            "dataSource": {
+                "customer.Z_DIR_IMG_SRV": {
+                    "uri": "/sap/opu/odata/SAP/Z_DIR_IMG_SRV",
+                    "type": "OData",
+                    "settings": {
+                        "odataVersion": "2.0"
+                    }
+                }
+            },
+            "model": {
+                "customer.Z_DIR_IMG_SRV": {
+                    "dataSource": "customer.Z_DIR_IMG_SRV",
+                    "settings": {}
+                }
+            }
+        }
+    },
+    {
+      "changeType": "appdescr_app_setTitle",
+      "content": {},
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n"
+      },
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "@i18n"
+      },
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    }
+  ]
+}
